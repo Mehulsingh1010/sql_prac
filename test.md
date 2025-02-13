@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 Q3
 
 SELECT * 
@@ -34,3 +41,37 @@ WHERE SALARY BETWEEN 50000 AND 100000;
 
 
 ![image](https://github.com/user-attachments/assets/5f32812a-4a3d-4a0d-bf38-29d99185606b)
+
+
+Q7:
+
+SELECT DEPARTMENT, COUNT(*) as worker_count
+FROM Worker
+GROUP BY DEPARTMENT
+ORDER BY worker_count DESC;
+
+![image](https://github.com/user-attachments/assets/68848d8f-b98f-4634-91a5-3c3087af3912)
+
+
+Q8:
+SELECT * FROM (
+    SELECT DISTINCT SALARY 
+    FROM Worker 
+    ORDER BY SALARY DESC
+) 
+WHERE ROWNUM = 5;
+
+![image](https://github.com/user-attachments/assets/62bdcfd9-dca5-4f85-ab0a-00dc5b670b1e)
+
+Q9:
+
+![image](https://github.com/user-attachments/assets/5f875bdf-16bf-4228-82b9-72571e2ad3c0)
+
+Q10:
+SELECT DEPARTMENT, COUNT(*) as emp_count
+FROM Worker
+GROUP BY DEPARTMENT
+HAVING COUNT(*) < 3;
+![image](https://github.com/user-attachments/assets/d8abb141-701a-41de-b393-33dbdeb41267)
+
+
