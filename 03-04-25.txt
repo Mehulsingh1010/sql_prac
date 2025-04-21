@@ -1,0 +1,6 @@
+Replication Handson Practice
+
+In this sir has taught how we can connect and disconnect the mongodb compass, how to change ip , file name.
+
+In this he had shown us how we can work on terminal , redirect from one file to other . 
+How to update and add data
